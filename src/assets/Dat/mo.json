@@ -1,6 +1,7 @@
 {
   "products": [
-    { "T shirt Model": 1,
+    {
+      "T shirt Model": 1,
       "categoryId": 1,
       "productName": "Polo T Shirt",
       "author": "Display",
@@ -9,8 +10,8 @@
       "productImg": "http://localhost:4200/assets/Img/1.jpg",
       "rating": "10"
     },
-
-    { "T shirt Model": 2,
+    {
+      "T shirt Model": 2,
       "categoryId": 1,
       "productName": "Polo T Shirt",
       "author": "Display",
@@ -19,8 +20,8 @@
       "productImg": "http://localhost:4200/assets/Img/2.jpg",
       "rating": "8"
     },
-
-    { "T shirt Model": 3,
+    {
+      "T shirt Model": 3,
       "categoryId": 2,
       "productName": "Kyle",
       "author": "Display",
@@ -29,8 +30,8 @@
       "productImg": "http://localhost:4200/assets/Img/4.jpg",
       "rating": "6"
     },
-
-    { "T shirt Model": 4,
+    {
+      "T shirt Model": 4,
       "categoryId": 2,
       "productName": "Glitz",
       "author": "Display",
@@ -39,7 +40,8 @@
       "productImg": "http://localhost:4200/assets/Img/5.jpg",
       "rating": "5"
     },
-    { "T shirt Model": 5,
+    {
+      "T shirt Model": 5,
       "categoryId": 3,
       "productName": "Pallu",
       "author": "Display",
@@ -48,7 +50,8 @@
       "productImg": "http://localhost:4200/assets/Img/images.jpg",
       "rating": "3"
     },
-    { "T shirt Model": 6,
+    {
+      "T shirt Model": 6,
       "categoryId": 3,
       "productName": "Despasito",
       "author": "Display",
@@ -56,16 +59,53 @@
       "price": "400$",
       "productImg": "http://localhost:4200/assets/Img/images.jpg",
       "rating": "4"
+    },
+    {
+      "id": 11,
+      "categoryId": "1",
+      "productName": "eretret",
+      "description": "rtery",
+      "rating": "2",
+      "price": "250",
+      "productImg": "",
+      "isAvailable": 1,
+      "color": "ret",
+      "reviews": "1"
     }
   ],
-
   "categories": [
-    { "id": 1, "categoryName": "Polo T shirt", "postId": 89 },
-    { "id": 2, "categoryName": "G Flock", "postId": 65 },
-    { "id": 3, "categoryName": "Kyle", "postId": 95 },
-    { "id": 4, "categoryName": "Despasito", "postId": 89 },
-    { "id": 5, "categoryName": "Pallu", "postId": 65 },
-    { "id": 6, "categoryName": "Glitz", "postId": 95 }
+    {
+      "id": 1,
+      "categoryName": "Polo T shirt",
+      "postId": 89
+    },
+    {
+      "id": 2,
+      "categoryName": "G Flock",
+      "postId": 65
+    },
+    {
+      "id": 3,
+      "categoryName": "Kyle",
+      "postId": 95
+    },
+    {
+      "id": 4,
+      "categoryName": "Despasito",
+      "postId": 89
+    },
+    {
+      "id": 5,
+      "categoryName": "Pallu",
+      "postId": 65
+    },
+    {
+      "id": 6,
+      "categoryName": "Glitz",
+      "postId": 95
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

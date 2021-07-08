@@ -1,32 +1,63 @@
-<div class="container">
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<h2 class="bg-light mb-2">Add New Product</h2>
+<form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm" >
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >Product Name</label>
+      <input type="text" class="form-control" value="Enter Product Name" required name="product_name" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label >Category Id</label>
+      <input type="text" class="form-control" required name="product_category" ngModel>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >Description</label>
+      <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="product_description" ngModel >
+        </textarea>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label>Rating</label>
+      <select class="custom-select" required name="product_rating" ngModel>
+        <option selected value="">Choose...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >Product Color</label>
+      <input type="text" class="form-control" value="Enter Product Name" required name="product_color" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label >Is Avaiable</label>
+      <select class="custom-select" required name="product_available" ngModel>
+        <option selected value="">Choose...</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label >Product Price</label>
+      <input type="text" class="form-control" value="Enter Product Name" required name="product_price" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label >Reviews</label>
+      <select class="custom-select" required name="product_reviews" ngModel>
+        <option selected value="">Choose...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">23/option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
   </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-</div>

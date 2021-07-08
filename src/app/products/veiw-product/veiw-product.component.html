@@ -1,18 +1,19 @@
-<h2>Showing Category Views</h2>
+<h2>Showing product Views</h2>
 <<body>
 <div class="row">
 
     <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="" alt=""></a>
+      <a href="#"><img class="card-img-top" src="{{productDetails.productImg}}" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="products/"></a>
+          <a href="products/{{productDetails.id}}">{{productDetails.productName}}</a>
         </h4>
-        <h5>Product Id: {{productId}}</h5>
-        <p class="card-text"></p>
+        <a href="product/update-product/{{productDetails.id}}">Update Product</a>
+        <h5>{{productDetails.price}}</h5>
+        <p class="card-text">{{productDetails.description}}</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"></small>
+        <small class="text-muted">{{productDetails.rating}}</small>
       </div>
     </div>
   </div>

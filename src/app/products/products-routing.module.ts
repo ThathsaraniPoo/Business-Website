@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductsComponent } from './products.component';
+
 import {CreateProductComponent} from "./create-product/create-product.component";
 import {DeleteProductsComponent} from "./delete-products/delete-products.component";
 import {UpdateProductsComponent} from "./update-products/update-products.component";
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'search-date', component: VeiwProductsByDateComponent },
   { path: 'category/:id', component: VeiwAllProductsByCategoryComponent },
   { path: 'delete-product/:id', component: DeleteProductsComponent },
-  { path: 'products/:id', component: VeiwAllProductsComponent},
+  { path: 'products', component: VeiwAllProductsComponent},
   { path: 'update-product/:id', component: UpdateProductsComponent },
 ];
 

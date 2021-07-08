@@ -1,5 +1,6 @@
 export interface Product {
  id:string;
+ productDetails:string;
   productBody:string;
   description:string;
   rating:string;

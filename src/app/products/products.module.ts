@@ -10,6 +10,7 @@ import { DeleteProductsComponent } from './delete-products/delete-products.compo
 import { VeiwProductsByDateComponent } from './veiw-products-by-date/veiw-products-by-date.component';
 import { VeiwAllProductsByCategoryComponent } from './veiw-all-products-by-category/veiw-all-products-by-category.component';
 import { VeiwProductComponent } from './veiw-product/veiw-product.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -25,9 +26,10 @@ import { VeiwProductComponent } from './veiw-product/veiw-product.component';
     VeiwProductComponent
 
   ],
-  imports: [
-    CommonModule,
-    ProductsRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        ProductsRoutingModule,
+        FormsModule
+    ]
 })
 export class ProductsModule { }

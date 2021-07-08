@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {ProductsService} from "../products.service";
+import {Product} from "../../product";
 
 @Component({
   selector: 'app-veiw-product',
@@ -8,12 +10,18 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class VeiwProductComponent implements OnInit {
  productId=0;
-  constructor(private activatedRoute:ActivatedRoute) { }
+ productDetails!: Product;
+  constructor(private activatedRoute:ActivatedRoute,
+              private productService:ProductsService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(data=>{
       this.productId=data.id;
     })
+    this.productService.viewProduct(this.productId).subscribe(productData=>{
+      this.productDetails= productData;
+    })
+
   }
 
 }
