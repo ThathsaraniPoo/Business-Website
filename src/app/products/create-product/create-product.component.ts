@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+
 @Component({
   selector: 'app-create-product',
   templateUrl: './create-product.component.html',
@@ -13,7 +14,7 @@ export class CreateProductComponent implements OnInit {
   }
   addNewProduct(form:any){
   let newProduct= {
-    id: 11,
+    id:13,
     categoryId: form.value.product_category,
     productName: form.value.product_name,
     description: form.value.product_description,
@@ -25,10 +26,9 @@ export class CreateProductComponent implements OnInit {
     reviews: form.value.product_category,
   };
 
-
-
-  this.productsService.createProduct(newProduct).subscribe(data=>{
-    console.log(data)
+    console.log('newProduct ', newProduct);
+    this.productsService.createProduct(newProduct).subscribe(data=>{
+    console.log('love',data)
   })
 
 

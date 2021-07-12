@@ -20,8 +20,9 @@ export class VeiwAllProductsByCategoryComponent implements OnInit {
 this.activatedRoute.params.subscribe(data=>{
   this.searchCategory= data.id;
 
-  this.productService.searchByCateoryProducts(this.searchCategory).subscribe(catedata=>{
-    this.productList=catedata;
+  this.productService.searchByCategoryProducts(this.searchCategory).subscribe(categoryData=>{
+    this.productList=categoryData;
+
   });
 });
 

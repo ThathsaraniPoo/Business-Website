@@ -10,13 +10,12 @@ import {VeiwProductsByDateComponent} from "./veiw-products-by-date/veiw-products
 import {VeiwProductComponent} from "./veiw-product/veiw-product.component";
 
 const routes: Routes = [
-  { path: '', component: VeiwAllProductsComponent },
+  { path: '', component:VeiwAllProductsComponent},
   { path: 'create-product', component: CreateProductComponent },
-  { path: 'view-product/:id', component: VeiwProductComponent },
+  { path: 'product/:id', component: VeiwProductComponent },
   { path: 'search-date', component: VeiwProductsByDateComponent },
   { path: 'category/:id', component: VeiwAllProductsByCategoryComponent },
   { path: 'delete-product/:id', component: DeleteProductsComponent },
-  { path: 'products', component: VeiwAllProductsComponent},
   { path: 'update-product/:id', component: UpdateProductsComponent },
 ];
 

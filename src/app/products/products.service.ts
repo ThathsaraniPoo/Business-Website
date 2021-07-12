@@ -19,13 +19,17 @@ export class ProductsService {
   }
 
 
- createProduct(productBody: any):Observable<Product>{
+ createProduct(productBody:any):Observable<Product>{
    const productUrl= 'http://localhost:3000/products';
    return this.httpClient.post<Product>(productUrl,productBody);//return observable
 }
   viewProduct(productId:any):Observable<Product>{
     const productUrl= 'http://localhost:3000/products'+productId;
     return this.httpClient.get<Product>(productUrl);//return observable
+  }
+  veiwAllProducts(productId:any):Observable<Product[]>{
+    const productUrl= 'http://localhost:3000/products';
+    return this.httpClient.get<Product[] >(productUrl);//return observable
   }
   updateProduct(productBody: any, productId: any):Observable<Product>{
     const productUrl= 'http://localhost:3000/products';
@@ -36,7 +40,7 @@ export class ProductsService {
     return this.httpClient.delete<Product>(productUrl);//return observable
   }
 
-  searchByCateoryProducts( categoryId:any):Observable<Product[]>{
+  searchByCategoryProducts( categoryId:any):Observable<Product[]>{
     const productUrl= 'http://localhost:3000/products?categoryId='+categoryId;
     return this.httpClient.get<Product[]>(productUrl);//return observable
   }

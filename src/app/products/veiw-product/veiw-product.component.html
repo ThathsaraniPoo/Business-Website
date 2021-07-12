@@ -1,25 +1,23 @@
-<h2>Showing product Views</h2>
-<<body>
-<div class="row">
+<div class="card mt-4 mb-4">
+  <img class="card-img-top img-fluid" src="{{productDetails.productImg}}" alt="" width="900" height="200">
+  <div class="card-body">
+    <h3 class="card-title">{{ productDetails.productName }}</h3>
+    <a href="products/update-product/{{productDetails.id}}">Update Product</a>  ||
+    <a href="products/delete-product/{{productDetails.id}}">Delete Product</a>
+    <h4>${{ productDetails.price }}</h4>
+    <p class="card-text">{{ productDetails.description }}</p>
 
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="{{productDetails.productImg}}" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="products/{{productDetails.id}}">{{productDetails.productName}}</a>
-        </h4>
-        <a href="product/update-product/{{productDetails.id}}">Update Product</a>
-        <h5>{{productDetails.price}}</h5>
-        <p class="card-text">{{productDetails.description}}</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{productDetails.rating}}</small>
-      </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ productDetails.rating}} Stars</small>
     </div>
   </div>
+</div>
+<!-- /.card -->
+
+<div ngClass="c2">Click where to go >>>></div>
 
 
 
 
-</body>
+
 

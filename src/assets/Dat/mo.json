@@ -1,68 +1,80 @@
 {
   "products": [
     {
-      "T shirt Model": 1,
+      "id": 1,
       "categoryId": 1,
       "productName": "Polo T Shirt",
-      "author": "Display",
       "description": "The description goes here...",
-      "price": "250$",
+      "rating": "7",
+      "price": "300$",
       "productImg": "http://localhost:4200/assets/Img/1.jpg",
-      "rating": "10"
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+     " reviews": "form.value.product_category"
     },
     {
-      "T shirt Model": 2,
+      "id": 2,
       "categoryId": 1,
-      "productName": "Polo T Shirt",
-      "author": "Display",
-      "description": "The description goes here...",
-      "price": "450$",
-      "productImg": "http://localhost:4200/assets/Img/2.jpg",
-      "rating": "8"
-    },
-    {
-      "T shirt Model": 3,
-      "categoryId": 2,
       "productName": "Kyle",
-      "author": "Display",
       "description": "The description goes here...",
-      "price": "350$",
-      "productImg": "http://localhost:4200/assets/Img/4.jpg",
-      "rating": "6"
+      "rating": "4",
+      "price": "520$",
+      "productImg": "http://localhost:4200/assets/Img/2.jpg",
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+      " reviews": "form.value.product_category"
     },
     {
-      "T shirt Model": 4,
+      "id": 3,
+      "categoryId": 2,
+      "productName": "Polo T Shirt",
+      "description": "The description goes here...",
+      "rating": "5",
+      "price": "450$",
+      "productImg": "http://localhost:4200/assets/Img/4.jpg",
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+      " reviews": "form.value.product_category"
+    },
+    {
+      "id": 4,
       "categoryId": 2,
       "productName": "Glitz",
-      "author": "Display",
       "description": "The description goes here...",
-      "price": "150$",
+      "rating": "7",
+      "price": "400$",
       "productImg": "http://localhost:4200/assets/Img/5.jpg",
-      "rating": "5"
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+      " reviews": "form.value.product_category"
     },
     {
-      "T shirt Model": 5,
+      "id": 5,
       "categoryId": 3,
-      "productName": "Pallu",
-      "author": "Display",
+      "productName": "Glitz",
       "description": "The description goes here...",
-      "price": "400$",
-      "productImg": "http://localhost:4200/assets/Img/images.jpg",
-      "rating": "3"
+      "rating": "7",
+      "price": "500$",
+      "productImg": "http://localhost:4200/assets/Img/1.jpg",
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+      " reviews": "form.value.product_category"
     },
     {
-      "T shirt Model": 6,
-      "categoryId": 3,
-      "productName": "Despasito",
-      "author": "Display",
+      "id": 6,
+      "categoryId": 4,
+      "productName": "Polo T Shirt",
       "description": "The description goes here...",
-      "price": "400$",
-      "productImg": "http://localhost:4200/assets/Img/images.jpg",
-      "rating": "4"
+      "rating": "8",
+      "price": "350$",
+      "productImg": "http://localhost:4200/assets/Img/1.jpg",
+      "isAvailable": 1,
+      "color":"form.value.product_color",
+      " reviews": "form.value.product_category"
     },
     {
       "id": 11,
-      "categoryId": "1",
+      "categoryId": 4,
       "productName": "eretret",
       "description": "rtery",
       "rating": "2",
