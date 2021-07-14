@@ -10,7 +10,7 @@ export class ProductsService {
 
   constructor(private httpClient:HttpClient) { }
   getAllProduct():Observable<Product[]>{
-    const productUrl= 'http://localhost:3000/products';
+    const productUrl= 'http://localhost:3000/products/';
     return this.httpClient.get<Product[]>(productUrl);//return observable
   }
   getCategories():Observable<Category[]>{
@@ -20,19 +20,21 @@ export class ProductsService {
 
 
  createProduct(productBody:any):Observable<Product>{
-   const productUrl= 'http://localhost:3000/products';
+   const productUrl= 'http://localhost:3000/products/';
    return this.httpClient.post<Product>(productUrl,productBody);//return observable
 }
-  viewProduct(productId:any):Observable<Product>{
-    const productUrl= 'http://localhost:3000/products'+productId;
-    return this.httpClient.get<Product>(productUrl);//return observable
+
+  viewProduct(productId:any): Observable<Product>{
+    const productUrl = 'http://localhost:3000/products/'+ productId;
+    return this.httpClient.get<Product>(productUrl); // return an observable
   }
+
   veiwAllProducts(productId:any):Observable<Product[]>{
-    const productUrl= 'http://localhost:3000/products';
+    const productUrl= 'http://localhost:3000/products/';
     return this.httpClient.get<Product[] >(productUrl);//return observable
   }
   updateProduct(productBody: any, productId: any):Observable<Product>{
-    const productUrl= 'http://localhost:3000/products';
+    const productUrl= 'http://localhost:3000/products/';
     return this.httpClient.put<Product>(productUrl,productBody);//return observable
   }
   deleteProduct(productId: string):Observable<Product>{

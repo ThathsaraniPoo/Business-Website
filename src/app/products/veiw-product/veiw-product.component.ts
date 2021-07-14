@@ -12,13 +12,13 @@ export class VeiwProductComponent implements OnInit {
  productId=0;
  productDetails!: Product;
   constructor(private activatedRoute:ActivatedRoute,
-              private productService:ProductsService) { }
+              private productsService:ProductsService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(data=>{
       this.productId=data.id;
     })
-    this.productService.viewProduct(this.productId).subscribe(productData=>{
+    this.productsService.viewProduct(this.productId).subscribe(productData=>{
       this.productDetails= productData;
     })
 
