@@ -28,4 +28,27 @@ productDetails!:Product;
 
   }
 
+  updateProduct(form:any){
+
+    console.log(form);
+
+    const updateProduct = {
+      id: form.value.id,
+      categoryId: form.value.categoryId,
+      productName: form.value.productName,
+      description: form.value.description,
+      rating: form.value.product_rating,
+      price: form.value.product_price,
+      productImg: '',
+      isAvailable: 1,
+      color: form.value.product_color,
+      reviews: form.value.product_category,
+    };
+
+    this.productService.updateProduct(this.productId, updateProduct).subscribe(data => {
+      console.log(data);
+    });
+
+  }
+
 }
